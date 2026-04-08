@@ -17,7 +17,7 @@ public class Map extends Application {
     @Override
     public void start(Stage stage) {
         HBox top = new HBox(10);
-        Label name = new Label("Interactive map of Uzbekistan | Press the location names to get the information");
+        Label name = new Label("Interactive map of Uzbekistan || Press the location names to get the information");
         name.setTextFill(Color.WHITE);
         name.setFont(Font.font("Consolas", FontWeight.BOLD, 16));
         top.setPadding(new Insets(12));
@@ -27,7 +27,7 @@ public class Map extends Application {
         HBox info = new HBox(10);
         info.setPadding(new Insets(12));
         info.setStyle(
-                "-fx-background-color: #FFFFFE;" +
+                "-fx-background-color: white;" +
                         "-fx-padding:15;"+
                         "-fx-border-color: black;");
 
@@ -49,7 +49,8 @@ public class Map extends Application {
         stage.setResizable(false);
         stage.show();
     }
-        public static void main(String[] args){
+
+    public static void main(String[] args){
         launch();
     }
 

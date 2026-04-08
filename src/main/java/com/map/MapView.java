@@ -118,6 +118,7 @@ public class MapView extends Pane {
         }
         String finalRegionName = regionName;
         lbl.setOnMouseClicked(e -> {
+            System.out.println(finalRegionName+" pressed");
             engine.load("https://en.wikipedia.org/wiki/"+ finalRegionName);
         });
 
